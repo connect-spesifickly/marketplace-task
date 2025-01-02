@@ -6,7 +6,7 @@ import Image from "next/image";
 export function Card(product: IProduct) {
   return (
     <a href={`/product/${product.id}`} className="flex flex-col">
-      <div className="lg:w-[200px] w-[190px]">
+      <div className="lg:w-[200px] w-[180px]">
         <figure className="w-[100%] h-[202px] border-[1px] rounded-lg">
           <Image
             src={product.images[0]}
@@ -19,9 +19,9 @@ export function Card(product: IProduct) {
         </figure>
         <div className="">
           <h2 className="text-[14px] text-justify h-[45px]">
-            {product.title.slice(0, 50)}
+            {product.title.slice(0, 45)}
             {/* menjadikan text yang melebihi 27 catarter menjadi ditambahi "..." */}
-            {product.title.split("").length <= 50 ? "" : "..."}
+            {product.title.split("").length <= 45 ? "" : "..."}
           </h2>
           <b className="flex items-center font-semibold">
             <p className="text-[12px]">Rp</p>
@@ -67,9 +67,9 @@ export function Card(product: IProduct) {
           ))}
           <div className="w-fit " style={{ objectFit: "cover" }}>
             <p className="text-[11px] mx-[2px] my-auto font-light">
-              {product.seller.slice(0, 27)}
+              {product.seller.slice(0, 24)}
               {/* menjadikan text yang melebihi 27 catarter menjadi ditambahi "..." */}
-              {product.seller.split("").length <= 27 ? "" : "..."}
+              {product.seller.split("").length <= 24 ? "" : "..."}
             </p>
           </div>
         </div>
