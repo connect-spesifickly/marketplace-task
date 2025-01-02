@@ -44,7 +44,7 @@ export default function LoginPage() {
             className=""
           />
         </Link>
-        <div className="absolute w-full h-[55vh] bg-white/50 rounded-t-2xl px-[20px] border-t-2 border-white mb-[-45vh]">
+        <div className="w-full h-[55vh] bg-white/50 rounded-t-2xl px-[20px] border-t-2 border-white mb-[-45vh]">
           <div className="">
             <form onSubmit={formik.handleSubmit} className="">
               <div className="mt-[25px] pb-[15px]">
