@@ -9,18 +9,18 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     maxAge: 20,
   },
   providers: [
-    Google({
-      clientId: process.env.AUTH_GOOGLE_ID, // Menggunakan environment variable
-      clientSecret: process.env.AUTH_GOOGLE_SECRET, // Menggunakan environment variable
-      authorization: {
-        params: {
-          prompt: "consent",
-          access_type: "offline",
-          response_type: "code",
-        },
-      },
-    }),
-
+    Google,
+    // ({
+    //   clientId: process.env.AUTH_GOOGLE_ID, // Menggunakan environment variable
+    //   clientSecret: process.env.AUTH_GOOGLE_SECRET, // Menggunakan environment variable
+    //   authorization: {
+    //     params: {
+    //       prompt: "consent",
+    //       access_type: "offline",
+    //       response_type: "code",
+    //     },
+    //   },
+    // }),
     Credentials({
       async authorize(credentials) {
         try {
