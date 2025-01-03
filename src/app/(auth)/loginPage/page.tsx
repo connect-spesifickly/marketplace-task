@@ -87,7 +87,7 @@ export default function LoginPage() {
                 </button>
               </div>
             </form>
-            <div className="text-[12px] md:text-[15px] text-gray-500  my-[15px]">
+            <div className="text-[12px] md:text-[15px] text-gray-500  my-[13px]">
               <h1 className="my-[15px] flex justify-center">
                 Login lebih cepat dengan
               </h1>
