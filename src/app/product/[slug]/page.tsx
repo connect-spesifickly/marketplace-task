@@ -5,6 +5,7 @@ import * as React from "react";
 import { useEffect, useState } from "react";
 import { CarouselPlugin } from "./components/crousel";
 import Image from "next/image";
+import { Navbar } from "@/components/navbar/page";
 
 export default function Slug() {
   const params = useParams<{ slug: string }>();
@@ -39,6 +40,7 @@ export default function Slug() {
 
   return (
     <div className="">
+      <Navbar />
       <div>
         {data?.map((item: IProduct) => (
           <div key={item.id}>
