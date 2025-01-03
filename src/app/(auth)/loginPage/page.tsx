@@ -78,10 +78,10 @@ export default function LoginPage() {
                   <div className="text-red-500">{formik.errors.password}</div>
                 ) : null} */}
               </div>
-              <div className="">
+              <div className=" ">
                 <button
                   type="submit"
-                  className="text-white bg-blue-500 w-full font-bold rounded-md h-[48px] hover:bg-blue-400"
+                  className="text-white bg-blue-500 rounded-[8px] w-full font-bold h-[48px] hover:bg-blue-400"
                 >
                   Login
                 </button>

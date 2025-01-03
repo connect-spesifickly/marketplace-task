@@ -109,7 +109,7 @@ export default function RegisterPage() {
             <div className="">
               <button
                 type="submit"
-                className="text-white bg-blue-500 w-full font-bold rounded-md h-[48px] hover:bg-blue-400"
+                className="text-white bg-blue-500 w-full font-bold rounded-[8px] h-[48px] hover:bg-blue-400"
               >
                 Daftar
               </button>
