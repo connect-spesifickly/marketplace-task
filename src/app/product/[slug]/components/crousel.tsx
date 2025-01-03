@@ -31,14 +31,14 @@ export function CarouselPlugin(props: CarouselPluginProps) {
           <CarouselItem key={index}>
             <div className="p-1">
               <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-0">
+                <CardContent className="flex aspect-square items-center justify-center p-0 rounded-[8px]">
                   <span className="text-4xl font-semibold">
                     <Image
                       src={image}
                       alt="product"
                       width={1000}
                       height={1000}
-                      className="object-cover aspect-square w-full h-full"
+                      className="object-cover aspect-square w-full h-full rounded-[8px]"
                     />
                   </span>
                 </CardContent>

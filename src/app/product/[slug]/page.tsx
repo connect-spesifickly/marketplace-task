@@ -42,7 +42,7 @@ export default function Slug() {
       <div>
         {data?.map((item: IProduct) => (
           <div key={item.id}>
-            <div className="flex justify-center border-[1px]">
+            <div className="flex justify-center border-[1px] bg-white">
               <CarouselPlugin images={item.images.slice(0, 3)} />
             </div>
 
@@ -127,7 +127,7 @@ export default function Slug() {
                       className="rounded-full aspect-square object-cover"
                     />
                   </div>
-                  <div className="h-[23px] font-bold text-[#016DEA] pl-[4px]">
+                  <div className="h-[23px] font-bold text-[#016DEA] pl-[4px] flex justify-center items-center">
                     {item.seller}
                   </div>
                   <div className="px-[4px] flex items-center">
