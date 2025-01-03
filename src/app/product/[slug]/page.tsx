@@ -39,8 +39,10 @@ export default function Slug() {
   // }
 
   return (
-    <div className="bg-white">
-      <Navbar />
+    <div className="">
+      <div className="bg-white">
+        <Navbar />
+      </div>
       <div>
         {data?.map((item: IProduct) => (
           <div key={item.id}>
