@@ -41,7 +41,11 @@ export default function Slug() {
       <div>
         {data?.map((item: IProduct) => (
           <div key={item.id}>
-            <CarouselPlugin />
+            <div className="flex justify-center">
+              <CarouselPlugin
+                key={item.images[0] + item.images[1] + item.images[2]}
+              />
+            </div>
             <h2>{item.title}</h2>
             <p>{item.deskripsi}</p>
           </div>
