@@ -33,6 +33,7 @@ export default function RegisterPage() {
       alert("Register Success, Please Login");
     } catch (error) {
       console.log(error);
+      window.location.href = "/loginPage";
       // if (error instanceof AxiosError) {
       //   console.log(error.response?.data);
 

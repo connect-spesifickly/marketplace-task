@@ -22,6 +22,7 @@ export default function LoginPage() {
         });
       } catch (error) {
         console.log(error);
+        window.location.href = "/";
       }
     },
   });
@@ -100,7 +101,7 @@ export default function LoginPage() {
                     height={18}
                     width={18}
                     className="w-5 h-5"
-                    alt="google "
+                    alt="google"
                   ></Image>{" "}
                 </button>
               </div>

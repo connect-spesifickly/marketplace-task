@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function Card(product: IProduct) {
   return (
-    <a href={`/product/${product.id}`} className="flex flex-col">
+    <a href={`/product/${product.title}`} className="flex flex-col">
       <div className="lg:w-[200px] w-[180px]">
         <figure className="w-[100%] h-[202px] border-[1px] rounded-lg">
           <Image
