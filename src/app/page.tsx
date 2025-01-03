@@ -3,7 +3,7 @@ import { Navbar } from "@/components/navbar/page";
 
 export default function LandingPage() {
   return (
-    <div className="">
+    <div>
       <Navbar />
       <CardList />
     </div>
