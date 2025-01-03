@@ -39,7 +39,7 @@ export default function Slug() {
   // }
 
   return (
-    <div className="">
+    <div className="bg-white">
       <Navbar />
       <div>
         {data?.map((item: IProduct) => (
