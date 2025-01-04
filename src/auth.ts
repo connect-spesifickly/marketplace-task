@@ -6,7 +6,7 @@ import Google from "next-auth/providers/google";
 export const { handlers, signIn, signOut, auth } = NextAuth({
   session: {
     strategy: "jwt",
-    maxAge: 2 * 60,
+    maxAge: 3 * 60,
   },
   providers: [
     Google,
