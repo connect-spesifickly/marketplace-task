@@ -10,6 +10,8 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   },
   providers: [
     Google({
+      clientId: process.env.AUTH_GOOGLE_ID, // Menggunakan environment variable
+      clientSecret: process.env.AUTH_GOOGLE_SECRET, // Menggunakan environment variable
       authorization: {
         params: {
           prompt: "consent",
